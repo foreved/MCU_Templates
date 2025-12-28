@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "Core/Inc",
+                "Drivers/CMSIS",
+                "Drivers/CMSIS/Device",
+                "Drivers/STM32H5xx_LL_Driver/Inc",
+                "User/Inc"
+            ],
+            "compilerPath": "arm-none-eabi-gcc",
+            "cStandard": "c99",
+            "intelliSenseMode": "linux-gcc-arm",
+            "defines": [
+                "USE_FULL_LL_DRIVER",
+                "STM32H503xx",
+                "CSI_VALUE=4000000",
+                "HSI_VALUE=64000000",
+                "HSE_VALUE=8000000"
+            ]
+        }
+    ],
+    "version": 4
+}
