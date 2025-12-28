@@ -191,7 +191,10 @@
   */
 
 /**
-  * @brief  Setup the microcontroller system.
+  * @brief  启动文件会调用 SystemInit(), 主要实现
+  *         1) 设置 FPU
+  *         2) 复位 RCC 时钟配置; 默认使用 HSI 作为系统时钟
+  *         3) 配置中断向量表地址
   * @param  None
   * @retval None
   */

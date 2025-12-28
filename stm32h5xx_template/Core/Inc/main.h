@@ -55,9 +55,23 @@
 #include "stm32_assert.h"
 #endif /* USE_FULL_ASSERT */
 
-/* Exported types ------------------------------------------------------------*/
-/* Exported constants --------------------------------------------------------*/
-/* Exported macro ------------------------------------------------------------*/
-/* Exported functions ------------------------------------------------------- */
+/***************************** 优先级分组 *****************************/
+#define NVIC_PRIORITYGROUP_0         ((uint32_t)0x00000007) /*!< 0 bit  for pre-emption priority,
+                                                                 8 bits for subpriority */
+#define NVIC_PRIORITYGROUP_1         ((uint32_t)0x00000006) /*!< 1 bit  for pre-emption priority,
+                                                                 7 bits for subpriority */
+#define NVIC_PRIORITYGROUP_2         ((uint32_t)0x00000005) /*!< 2 bits for pre-emption priority,
+                                                                 6 bits for subpriority */
+#define NVIC_PRIORITYGROUP_3         ((uint32_t)0x00000004) /*!< 3 bits for pre-emption priority,
+                                                                 5 bit  for subpriority */
+#define NVIC_PRIORITYGROUP_4         ((uint32_t)0x00000003) /*!< 4 bits for pre-emption priority,
+                                                                 4 bit  for subpriority */
+#define NVIC_PRIORITYGROUP_5         ((uint32_t)0x00000002) /*!< 5 bits for pre-emption priority,
+                                                                 3 bit  for subpriority */
+#define NVIC_PRIORITYGROUP_6         ((uint32_t)0x00000001) /*!< 6 bits for pre-emption priority,
+                                                                 2 bit  for subpriority */
+#define NVIC_PRIORITYGROUP_7         ((uint32_t)0x00000000) /*!< 7 bits for pre-emption priority,
+                                                                 1 bit  for subpriority */
+/***************************** 优先级分组 *****************************/
 
 #endif /* MAIN_H */
