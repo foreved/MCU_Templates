@@ -18,8 +18,8 @@ int main(void)
 
 /**
  * @brief  配置 STM32 的电压等级, 读取操作等待周期, 时钟树. 这三者需要参考手册, 确定合适的值.
- * @param  None
- * @retval None
+ * @param  无
+ * @retval 无
  */
 static void SystemClock_Config(void)
 {
@@ -99,8 +99,6 @@ static void CACHE_Enable(void)
     /* Enable instruction cache (default 2-ways set associative cache) */
     LL_ICACHE_Enable();
 }
-
-/* ==============   BOARD SPECIFIC CONFIGURATION CODE END      ============== */
 
 #ifdef USE_FULL_ASSERT
 /**
