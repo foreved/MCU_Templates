@@ -50,6 +50,9 @@ add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/Drivers/STM32H5xx_ll_Driver)
 # 3. 构建用户库
 # add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/User)
 
+# 构建测试库 (正式项目不需要)
+# add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/Test)
+
 # 4. 构建主程序
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/Core)
 ################### 构建项目 ###################
