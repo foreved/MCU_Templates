@@ -20,6 +20,7 @@
  ******************************************************************************
  */
 
+#if !defined(__MICROLIB)
 /* Includes */
 #include <sys/stat.h>
 #include <stdlib.h>
@@ -242,3 +243,5 @@ __strong_reference(_kill, kill);
 __strong_reference(_getpid, getpid);
 
 #endif //__PICOLIBC__
+
+#endif
